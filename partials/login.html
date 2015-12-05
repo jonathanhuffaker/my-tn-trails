@@ -1,0 +1,24 @@
+<!-- <ng-include src="'partials/navbar.html'"></ng-include> -->
+
+<div class="row">
+
+	<div class="col-xs-4"></div>
+	<div class="col-xs-4">
+		<div class="container loginBox">
+			<div class="row titleBar">
+				<h1>Welcome to myTN Trails.  Please log-in or register</h1>
+			</div>
+			<div class="row">
+				<input class="loginInput" type="text" ng-model="name" placeholder="name">
+				<input class="loginInput" type="email" ng-model="email" placeholder="email">
+				<input class="loginInput" type="password" ng-model="password" placeholder="password">
+					<button class="btn inputButtons" ng-click="createUser()">Create Account</button>
+					<button class="btn inputButtons" ng-click="loginUser()">Login</button>
+			</div>
+		</div>
+
+	</div>
+	<div class="col-xs-4"></div>
+
+
+</div>
