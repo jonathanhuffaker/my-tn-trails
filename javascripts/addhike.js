@@ -2,12 +2,12 @@ app.controller('addhikeCtrl',
 	['Auth',
 	'$firebaseArray',
 	'$location',
-	function(Auth, $addHike, $location){
+	function(Auth, $addHikes, $location){
 		var authData = Auth.$getAuth();
 		console.log(authData);
 		var ref = new Firebase("https://my-tn-trails.firebaseio.com/users/"+authData.auth.uid+"/hikes/");
 
-		this.hikes = $addHike(ref);
+		this.hikes = $addHikes(ref);
 
 		this.newHike = {};
 
@@ -17,7 +17,8 @@ app.controller('addhikeCtrl',
 				location: this.newHike.location,
 				park: this.newHike.park,
 				rating: this.newHike.rating,
-				description: this.newHike.description
+				description: this.newHike.description,
+				id: "hike"+((Math.random()*10)+1)
 			});
 		// 	this.newHike="";
 		// 	$location.path("/profile/");

@@ -2,13 +2,13 @@
 
 <section class="addForm col-xs-4">
   <p> Add Hike...</p>
-  	<input type="text" placeholder="Trail Name" ng-model="addhikeCtrl.newHike.title" />
-  	<input type="text" placeholder= "Location (Gatlinburg, TN)" ng-model="addhikeCtrl.newHike.location" />
+  	<input type="text" placeholder="Trail Name" ng-model="AddHikeCtrl.newHike.trail" />
+  	<input type="text" placeholder= "Location (Gatlinburg, TN)" ng-model="AddHikeCtrl.newHike.location" />
 
-  	<input type="text" placeholder= "Park (Smoky Mountain National Park" ng-model="addhikeCtrl.newHike.park" />
+  	<input type="text" placeholder= "Park (Smoky Mountain National Park" ng-model="AddHikeCtrl.newHike.park" />
 
   	<div>
-  		<span>Rating: </span> <input list="rating" ng-model="addhikeCtrl.newHike.rating" />
+  		<span>Rating: </span> <input list="rating" ng-model="AddHikeCtrl.newHike.rating" />
   			<datalist id="rating">
   				<select name ="Rating">
 	  				<option value="1">1</option>
@@ -20,10 +20,13 @@
       	</datalist>
     </div>
 
+    <input type="text" placeholder= "Description" ng-model="AddHikeCtrl.newHike.description" />
+
+
   	<div class="container">
   		<div class="col-xs-4"></div>
   			<div class="col-xs-4">
-					<a class="btn btn-success" role="button" ng-click="addhikeCtrl.addHike()">Add</a>
+					<a class="btn btn-success" role="button" ng-click="AddHikeCtrl.addHike()">Add</a>
 				</div>
 				<div class="col-xs-4"></div>
 		</div>

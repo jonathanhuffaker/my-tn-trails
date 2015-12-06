@@ -18,7 +18,7 @@ app.config(
 				})
 				.when('/addHike/',{
 					templateUrl: '/partials/addHike.html',
-					controller: 'addhikeCtrl'
+					controller: 'addhikeCtrl as AddHikeCtrl'
 				})
 				.otherwise({ redirectTo: '/login'});
 		}
