@@ -1,0 +1,30 @@
+<ng-include src="'partials/navbar.html'"></ng-include>
+
+<section class="addForm col-xs-4">
+  <p> Add Hike...</p>
+  	<input type="text" placeholder="Trail Name" ng-model="addhikeCtrl.newHike.title" />
+  	<input type="text" placeholder= "Location (Gatlinburg, TN)" ng-model="addhikeCtrl.newHike.location" />
+
+  	<input type="text" placeholder= "Park (Smoky Mountain National Park" ng-model="addhikeCtrl.newHike.park" />
+
+  	<div>
+  		<span>Rating: </span> <input list="rating" ng-model="addhikeCtrl.newHike.rating" />
+  			<datalist id="rating">
+  				<select name ="Rating">
+	  				<option value="1">1</option>
+	          <option value="2">2</option>
+	          <option value="3">3</option>
+	          <option value="4">4</option>
+	          <option value="5">5</option>
+        	</select>
+      	</datalist>
+    </div>
+
+  	<div class="container">
+  		<div class="col-xs-4"></div>
+  			<div class="col-xs-4">
+					<a class="btn btn-success" role="button" ng-click="addhikeCtrl.addHike()">Add</a>
+				</div>
+				<div class="col-xs-4"></div>
+		</div>
+</section>

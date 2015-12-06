@@ -16,7 +16,7 @@ app.config(
 					templateUrl: '/partials/otheruserprofile.html',
 					controller: 'userprofileCtrl'
 				})
-				.when('/addhike',{
+				.when('/addHike/',{
 					templateUrl: '/partials/addHike.html',
 					controller: 'addhikeCtrl'
 				})
