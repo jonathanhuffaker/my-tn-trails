@@ -20,8 +20,10 @@ app.controller('addhikeCtrl',
 				description: this.newHike.description,
 				id: "hike"+((Math.random()*10)+1)
 			});
+
+			// clarify that I need the below - creating new branch before going off on another tangent
 		// 	this.newHike="";
-		// 	$location.path("/profile/");
-		// .bind(this);
+		// 	$location.path("/myHikes/");
+		// }.bind(this);
 		}
 	}]);

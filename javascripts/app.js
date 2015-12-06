@@ -20,6 +20,10 @@ app.config(
 					templateUrl: '/partials/addHike.html',
 					controller: 'addhikeCtrl as AddHikeCtrl'
 				})
+				.when('/myHikes/',{
+					templateUrl: '/partials/myHikes.html',
+					controller: 'myhikesCtrl as MyHikesCtrl'
+				})
 				.otherwise({ redirectTo: '/login'});
 		}
 	]
