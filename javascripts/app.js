@@ -8,7 +8,20 @@ app.config(
 					templateUrl: '/partials/login.html',
 					controller: 'authuserCtrl'
 				})
+				.when('/profile/', {
+					templateUrl: '/partials/profile.html',
+					controller: 'profileCtrl'
+				})
+				.when('/profile/;id', {
+					templateUrl: '/partials/otheruserprofile.html',
+					controller: 'userprofileCtrl'
+				})
+				.when('/addhike',{
+					templateUrl: '/partials/addHike.html',
+					controller: 'addhikeCtrl'
+				})
 				.otherwise({ redirectTo: '/login'});
 		}
 	]
 );
+
