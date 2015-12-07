@@ -24,6 +24,10 @@ app.config(
 					templateUrl: '/partials/myHikes.html',
 					controller: 'myhikesCtrl as MyHikesCtrl'
 				})
+				.when('/allUsers/',{
+					templateUrl: '/partials/allusers.html',
+					controller:'allusersCtrl as AllUsersCtrl'
+				})
 				.otherwise({ redirectTo: '/login'});
 		}
 	]
