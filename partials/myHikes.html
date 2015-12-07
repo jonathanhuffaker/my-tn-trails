@@ -1,0 +1,22 @@
+<ng-include src="'partials/navbar.html'"></ng-include>
+
+<div class="container">
+	</br>
+	<div class="row">
+		</br>
+			<div class="col-md-12">myHikes</div>	
+			<div class="col-md-2">
+				<input class="search" type="text" placeholder="Search your hikes..." ng-model="searchText">
+			</div>
+	</div>
+
+<div class="singleHikeDiv" ng-repeat="hike in MyHikesCtrl.hikes | filter:searchText">
+	<div class="singleHike">
+		<h3>{{hike.trail}}</h3>
+		<h5>{{hike.location}}</h5>
+		<h5>{{hike.park}}</h5>
+
+		<p>{{hike.description}}</p>
+		<p>Rating: {{hike.rating}}</p>
+	</div>
+</div>
