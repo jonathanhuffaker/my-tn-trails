@@ -22,7 +22,11 @@ var auth = angular.module('Authorize', ['firebase']);
 					email: $scope.email,
 					password: $scope.password
 				}).then(function(userData){
-					var ref = new Firebase("https://my-tn-trails.firebaseio.com/users/"+userData.uid+"/userinfo");
+					
+					// Changing what i had originaly to reflect order by child - keeping old for safety
+					var ref = new Firebase("https://my-tn-trails.firebaseio.com/users/"+userData.uid);
+
+
 					ref.set({
 						email: $scope.email,
 						name: $scope.name,
