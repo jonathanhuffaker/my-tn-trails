@@ -28,6 +28,10 @@ app.config(
 					templateUrl: '/partials/allusers.html',
 					controller:'allusersCtrl as AllUsersCtrl'
 				})
+				.when('/addPic/',{
+					templateUrl: '/partials/add-pic.html',
+					controller:'addpicCtrl as AddPicCtrl'
+				})
 				.otherwise({ redirectTo: '/login'});
 		}
 	]
