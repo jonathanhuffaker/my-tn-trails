@@ -32,6 +32,10 @@ app.config(
 					templateUrl: '/partials/add-pic.html',
 					controller:'addpicCtrl as AddPicCtrl'
 				})
+				.when('/myGallery/', {
+					templateUrl: '/partials/myGallery.html',
+					controller: 'mygalleryCtrl as MyGalleryCtrl'
+				})
 				.otherwise({ redirectTo: '/login'});
 		}
 	]
