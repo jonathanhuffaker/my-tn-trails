@@ -10,7 +10,7 @@ app.config(
 				})
 				.when('/profile/', {
 					templateUrl: '/partials/profile.html',
-					controller: 'profileCtrl'
+					controller: 'profileCtrl as ProfileCtrl'
 				})
 				.when('/profile/;id', {
 					templateUrl: '/partials/otheruserprofile.html',
@@ -41,3 +41,18 @@ app.config(
 	]
 );
 
+
+// Working on getting bootstrap navbar animation for dropdown
+
+// 	function HeaderController($scope, $location) 
+// { 
+//     $scope.isActive = function (viewLocation) { 
+//         return viewLocation === $location.path();
+//     };
+// }
+
+// app.controller("HeaderController", "$location", function(){
+// 	this.isActive = function(viewLocation) {
+// 		return viewLocation ===$location.path();
+// 	};
+// });

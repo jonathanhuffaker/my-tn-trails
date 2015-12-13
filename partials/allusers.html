@@ -3,8 +3,8 @@
 <div class="container">
 </br>
 <section class="row">
-	<div class="col-sm-12" ng-repeat="user in AllUsersCtrl.users" ng-if="AllUsersCtrl.determineUser(user.userinfo.uid)">
-		<p>{{user.userinfo.name}}</p>
+	<div class="col-sm-12" ng-repeat="user in AllUsersCtrl.users" ng-if="AllUsersCtrl.determineUser(user.name)">
+		<p>{{user.name}}</p>
 	</div>
 </section>
 </div>

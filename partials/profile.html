@@ -17,10 +17,22 @@
 			  <a href="#/addPic" class="list-group-item">Add Pic to Gallery</a>
 			  <a href="#/friends" class="list-group-item">Friends</a>
 			  <a href="#/allUsers" class="list-group-item">View All Users</a>
-
 			</ul>
 		</div>
-		<div class="col-sm-8">myHike Photo Gallery</div>
-			<ng-include src="'partials/myGallery.html'"></ng-include>
+
+<!-- PHOTO GALLERY -->	
+
+
+		<div class="col-sm-8">
+			<div>myHike Photo Gallery</div>
+				<div class="row" ng-repeat="photo in ProfileCtrl.photos">
+			  <div class="col-xs-3 col-md-3">
+			    <a href="{{photo.url}}" class="thumbnail">
+			      <img class= "smallThumbs" ng-src="{{photo.url}}" alt="...">
+			    </a>
+	    	</div>
+  		</div>
+	  </div>	
+			    <div> View All </div>
 	</div>
 </div>

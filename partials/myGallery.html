@@ -1,6 +1,6 @@
+<div>
 <ng-include src="'partials/navbar.html'"></ng-include>
 </br>
-
 <div class="row hikeThumb" ng-repeat="photo in MyGalleryCtrl.photos">
   <div class="col-xs-6 col-md-3">
     <a href="{{photo.url}}" class="thumbnail">
@@ -9,5 +9,10 @@
 
       <button ng-click="MyGalleryCtrl.deletePhoto(photo.$id)">Delete Photo</button>
   </div>
-  ...
 </div>
+
+<!-- <button type="button" class="btn btn-primary" ng-src="#/myGallery">Back to Gallery</button> -->
+
+<button onclick="history.back()">Back</button>
+</div>
+
