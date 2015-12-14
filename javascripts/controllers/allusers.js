@@ -24,7 +24,7 @@ app.controller('allusersCtrl',
 				console.log(id);
 				var authData = Auth.$getAuth();
 				console.log(authData);
-				var friendRef = new Firebase("my-tn-trails.firebaseio.com/users/"+authData.auth.uid+"friends");
+				var friendRef = new Firebase("https://my-tn-trails.firebaseio.com/users/"+authData.auth.uid+"/friends");
 				
 				this.friends = $allUsersArray(friendRef);
 

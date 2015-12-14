@@ -6,7 +6,7 @@
 	<div class="col-sm-12" ng-repeat="user in AllUsersCtrl.users" ng-if="AllUsersCtrl.determineUser(user.name)">
 		<p>{{user.name}}</p>
 
-		<button ng-click="AllUsersCtrl.addFriend(user.userinfo.uid, user.userinfo.name)">add Friend</button>
+		<button ng-click="AllUsersCtrl.addFriend(user.uid, user.name)">add Friend</button>
 	</div>
 </section>
 </div>
