@@ -18,6 +18,24 @@ app.controller('allusersCtrl',
 			}
 			return false;
 		};
+
+					//add a friend
+			this.addFriend = function(id,name){
+				console.log(id);
+				var authData = Auth.$getAuth();
+				console.log(authData);
+				var friendRef = new Firebase("my-tn-trails.firebaseio.com/users/"+authData.auth.uid+"friends");
+				
+				this.friends = $allUsersArray(friendRef);
+
+				this.newFriend = {};
+
+				this.friends.$add({
+						name: name,
+						uid: id
+					});
+				this.newfriend = "";
+			};
 	}]);
 
 // .orderByChild("uid").equalTo(me);
