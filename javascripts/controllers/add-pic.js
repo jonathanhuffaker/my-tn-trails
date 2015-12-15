@@ -15,7 +15,8 @@ app.controller('addpicCtrl',
 					this.pics.$add({
 					url: this.newPic.url,
 					id: "pic"+((Math.random()*10)+1),
-					uid: authData.uid
+					uid: authData.uid,
+					trail: this.newPic.trail
 				});
 					// this.newPic = "";
 					// $location.path("/addPic/");

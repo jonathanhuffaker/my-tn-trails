@@ -24,15 +24,16 @@ app.controller('allusersCtrl',
 				console.log(id);
 				var authData = Auth.$getAuth();
 				console.log(authData);
-				var friendRef = new Firebase("https://my-tn-trails.firebaseio.com/users/"+authData.auth.uid+"/friends");
+				var friendRef = new Firebase("https://my-tn-trails.firebaseio.com/friends/");
 				
 				this.friends = $allUsersArray(friendRef);
 
 				this.newFriend = {};
 
 				this.friends.$add({
+						uid: authData.uid,
 						name: name,
-						uid: id
+						friendID: "friend"+((Math.random()*10)+1)
 					});
 				this.newfriend = "";
 			};

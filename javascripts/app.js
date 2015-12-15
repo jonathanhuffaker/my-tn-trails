@@ -36,6 +36,10 @@ app.config(
 					templateUrl: '/partials/myGallery.html',
 					controller: 'mygalleryCtrl as MyGalleryCtrl'
 				})
+				.when('/friends/', {
+					templateUrl: '/partials/friends.html',
+					controller: 'friendsCtrl as FriendsCtrl'
+				})
 				.otherwise({ redirectTo: '/login'});
 		}
 	]

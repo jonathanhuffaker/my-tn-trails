@@ -1,0 +1,10 @@
+<ng-include src="'partials/navbar.html'"></ng-include>
+
+<div class="singleImgDiv col-xs-2">
+<h5>Insta-Friends</h5>
+	<div ng-repeat="friend in FriendsCtrl.friends" ng-if="FriendsCtrl.determineFriend(friend.name)">
+
+		<!-- <p ng-click="FriendsCtrl.gotoProfile(friend.uid)">{{friend.name}}</p> -->
+		<p>{{friend.name}}</p>
+	</div>	
+</div>
