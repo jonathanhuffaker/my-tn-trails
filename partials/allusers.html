@@ -3,10 +3,12 @@
 <div class="container">
 </br>
 <section class="row">
-	<div class="col-sm-12" ng-repeat="user in AllUsersCtrl.users" ng-if="AllUsersCtrl.determineUser(user.name)">
-		<p>{{user.name}}</p>
-
-		<button ng-click="AllUsersCtrl.addFriend(user.uid, user.name)">add Friend</button>
+	<div class="col-xs-6 col-md-3" ng-repeat="user in AllUsersCtrl.users" ng-if="AllUsersCtrl.determineUser(user.name)">
+		<a href="{{photo.url}}" class="thumbnail">
+ 			<img class= "smallThumbs" ng-src="{{user.profilepic}}" alt="...">
+ 		</a>
+			<p>{{user.name}}</p>
+			<button ng-click="AllUsersCtrl.addFriend(user.uid, user.name)">add Friend</button>
 	</div>
 </section>
 </div>
