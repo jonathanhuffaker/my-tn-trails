@@ -6,7 +6,18 @@
   		<div class="col-sm-4">
   			<div class="col-sm-4">
 					<h1>Welcome Back!</h1>
-					<img src="../images/images.jpeg" alt="profilePic">
+					<!-- <img src="../images/images.jpeg" alt="profilePic"> -->
+<!-- 							<div class="col-sm-8">
+ -->				<div class="row" ng-repeat="user in ProfileCtrl.profileInfo">
+				  		<div class="col-sm-6 col-md-4">
+				    		<a href="{{user.profilepic}}" class="thumbnail">
+				      		<img class= "smallThumbs" ng-src="{{user.profilepic}}" alt="...">
+				    		</a>
+		    			</div>
+	  				</div>
+	  					<!-- </div>	 -->
+
+
 					<div ng-repeat="user in ProfileCtrl.profileInfo">
 			    	<p> {{user.name}} </p>
   				</div>
@@ -37,12 +48,12 @@
 		<div class="col-sm-8">
 			<div>myHike Photo Gallery</div>
 				<div class="row" ng-repeat="photo in ProfileCtrl.photos">
-			  <div class="col-xs-3 col-md-3">
-			    <a href="{{photo.url}}" class="thumbnail">
-			      <img class= "smallThumbs" ng-src="{{photo.url}}" alt="...">
-			    </a>
-	    	</div>
-  		</div>
+				  <div class="col-xs-3 col-md-3">
+				    <a href="{{photo.url}}" class="thumbnail">
+				      <img class= "smallThumbs" ng-src="{{photo.url}}" alt="...">
+				    </a>
+		    	</div>
+	  		</div>
 	  </div>	
 			    <div> View All </div>
 	</div>

@@ -1,6 +1,7 @@
 var auth = angular.module('Authorize', ['firebase']);
 
 	var name;
+	var profilepic;
 	auth.factory("Auth", ["$firebaseAuth",
 	  function($firebaseAuth) {
 	    var ref = new Firebase("https://my-tn-trails.firebaseio.com/");
@@ -30,7 +31,9 @@ var auth = angular.module('Authorize', ['firebase']);
 					ref.set({
 						email: $scope.email,
 						name: $scope.name,
-						uid: userData.uid
+						uid: userData.uid,
+						profilepic: $scope.profilepic
+
 					});
 					console.log("user created with id:" +userData.uid);
   					$scope.loginUser();
