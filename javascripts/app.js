@@ -12,9 +12,9 @@ app.config(
 					templateUrl: '/partials/profile.html',
 					controller: 'profileCtrl as ProfileCtrl'
 				})
-				.when('/profile/;id', {
-					templateUrl: '/partials/otheruserprofile.html',
-					controller: 'userprofileCtrl'
+				.when('/profile/:id', {
+					templateUrl: '/partials/otherusersprofile.html',
+					controller: 'otherusersprofileCtrl as OtherUsersProfileCtrl'
 				})
 				.when('/addHike/',{
 					templateUrl: '/partials/addHike.html',

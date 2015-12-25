@@ -1,1 +1,18 @@
 <ng-include src="'partials/navbar.html'"></ng-include>
+</br>
+<div class="jumbotron">
+  <div class="container">
+		
+		<div ng-repeat="user in OtherUsersProfileCtrl.otherUser">
+   	 <img class= "largeThumbs" ng-src="{{user.profilepic}}" alt="...">
+			<p>{{user.name}}</p>
+		</div>
+  </div>
+</div>
+
+<div ng-repeat= "photo in OtherUsersProfileCtrl.photos">
+
+<a href="{{photos.url}}" class="thumbnail">
+				      <img class= "smallThumbs" ng-src="{{photos.url}}" alt="...">
+<div>{{OtherUsersProfileCtrl.otherUser[0].name}}</div>
+

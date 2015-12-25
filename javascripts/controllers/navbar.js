@@ -1,5 +1,11 @@
 // app.controller("HeaderController", "$location", function(){
-// 	this.isActive = function(viewLocation) {
+// 	
+
+
+
+
+
+// this.isActive = function(viewLocation) {
 // 		return viewLocation ===$location.path();
 // 	};
 // });

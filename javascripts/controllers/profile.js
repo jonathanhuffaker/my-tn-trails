@@ -14,6 +14,16 @@ app.controller('profileCtrl',
 		this.profileInfo= $currentInfo(ref);
 		console.log(this.profileInfo);
 
+	
+
+
+
+
+
+
+
+
+
 		// this.info = $currentInfo(ref2);
 		// console.log(this.info);
 

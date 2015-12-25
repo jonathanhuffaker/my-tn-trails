@@ -37,6 +37,12 @@ app.controller('allusersCtrl',
 					});
 				this.newfriend = "";
 			};
+
+
+
+			this.gotoProfile = function(uid){
+			$location.path("/profile/"+uid);
+			};
 	}]);
 
 // .orderByChild("uid").equalTo(me);
