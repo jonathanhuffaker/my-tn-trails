@@ -7,7 +7,7 @@ app.controller('friendsCtrl',
 			var me = authData.auth.uid;
 			console.log(me);
 			console.log("console log for my friends ctrl");
-			var ref = new Firebase("https://my-tn-trails.firebaseio.com/friends/");
+			var ref = new Firebase("https://my-tn-trails.firebaseio.com/friends/").orderByChild("uid").equalTo(me);
 			this.friends = $allFriendsArray(ref);
 			console.log(this.friends);
 			this.determineFriend = function(id){

@@ -2,30 +2,17 @@
 
 <div class="jumbotron">
   <div class="container">
-  	<div class="row">
-  		<div class="col-sm-3 col-md-3">
-<!--   			<div class="col-sm-4">
- -->					<h1 ng-mouseover="expression">Welcome Back!</h1>
+		<h1 ng-mouseover="expression">Welcome Back!</h1>
 					<!-- <img src="../images/images.jpeg" alt="profilePic"> -->
-<!-- 							<div class="col-sm-8">
- -->				<div class="row" ng-repeat="user in ProfileCtrl.profileInfo">
-				  		<div class="col-sm-6 col-md-12">
-				    		<a href="{{user.profilepic}}" class="thumbnail">
+ 		<div  ng-repeat="user in ProfileCtrl.profileInfo">
+			<a href="{{user.profilepic}}" class="thumbnail">
+			<img class= "largeThumbs" ng-src="{{user.profilepic}}" alt="...">
+			</a>
+	  </div>
 
-				      		<img class= "largeThumbs" ng-src="{{user.profilepic}}" alt="...">
-				    		</a>
-		    			</div>
-	  				</div>
-	  					<!-- </div>	 -->
-
-
-					<div ng-repeat="user in ProfileCtrl.profileInfo">
-			    	<p> {{user.name}} </p>
-  				</div>
-				<!-- </div> -->
-				<div class="col-sm-3 col-md-3"></div>
-			</div>
-		</div>
+		<div ng-repeat="user in ProfileCtrl.profileInfo">
+			<p> {{user.name}} </p>
+  	</div>
   </div>
 </div>
 
@@ -45,7 +32,7 @@
 
 <!-- PHOTO GALLERY -->	
 
-		<div class="container">
+	<div class="container">
 		<div class="col-sm-8">
 			<div>myHike Photo Gallery</div>
 				<div class="row" ng-repeat="photo in ProfileCtrl.photos">

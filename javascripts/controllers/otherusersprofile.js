@@ -1,23 +1,4 @@
-// app.controller('otherusersprofileCtrl',
-// 	['Auth',
-// 	'$routeParams',
-// 	'$firebaseArray',
-// 	'$location',
-// 	function(Auth, $routeParams, $currentInfo, $location){
-// 		var uid = $routeParams.uid;
-// 		var ref= new Firebase("https://my-tn-trails.firebaseio.com/users/"+uid);
-// 		this.info = $currentInfo(ref);
-// 		console.log(this.info);
-// 		var photoref = new Firebase("https://my-tn-trails.firebaseio.com/photos/"+uid);
-// 		this.photos = $currentInfo(photoref);
-// 			console.log(this.photos);
-// 		var friendsref = new Firebase("https://my-tn-trails.firebaseio.com/friends"+uid);
-// 		this.friends = $currentInfo(friendsref);
-// 		console.log(this.friends);
 
-
-// 	}]);
-// ===========================
 app.controller('otherusersprofileCtrl',
 	['Auth',
 	'$routeParams',
@@ -31,7 +12,9 @@ app.controller('otherusersprofileCtrl',
 		var photoref = new Firebase("https://my-tn-trails.firebaseio.com/photos/").orderByChild("uid").equalTo(id);
 		this.photos = $currentInfo(photoref);
 			console.log(this.photos);
-		var friendsref = new Firebase("https://my-tn-trails.firebaseio.com/friends").orderByChild("uid").equalTo(id);;
+		var hikesref= new Firebase("https://my-tn-trails.firebaseio.com/hikes/").orderByChild("uid").equalTo(id);
+		this.hikes = $currentInfo(hikesref);	
+		var friendsref = new Firebase("https://my-tn-trails.firebaseio.com/friends").orderByChild("uid").equalTo(id);
 		this.friends = $currentInfo(friendsref);
 		console.log(this.friends);
 

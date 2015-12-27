@@ -5,8 +5,14 @@
 	<div ng-repeat="friend in FriendsCtrl.friends" ng-if="FriendsCtrl.determineFriend(friend.name)">
 
 		<!-- <p ng-click="FriendsCtrl.gotoProfile(friend.uid)">{{friend.name}}</p> -->
-		<p>{{friend.name}}</p>
-	</div>	
+		
+			<a href="#/profile/{{user.uid}}">{{friend.name}}</a>
+
+
+		<!-- <p>{{friend.name}}</p> -->
+	</div>
+	<button onclick="history.back()">Back</button>
+	
 </div>
 
 

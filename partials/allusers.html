@@ -1,21 +1,19 @@
 <ng-include src="'partials/navbar.html'"></ng-include>
 </br>
 <div class="container">
-</br>
-<section class="row">
-	<div class="col-xs-6 col-md-3"  ng-repeat="user in AllUsersCtrl.users" ng-if="AllUsersCtrl.determineUser(user.name)">
-		<a href="{{photo.url}}" class="thumbnail">
- 			<img class= "smallThumbs" ng-src="{{user.profilepic}}" alt="...">
- 		</a>
-			<!-- <a ng-click= "AllUsersCtrl.gotoProfile(uid)">{{user.name}}</a> -->
-
-			<a href="#/profile/{{user.uid}}">{{user.name}}</a>
-
-			
+	</br>
+	<section class="row">
+		<div class="col-xs-6 col-md-3"  ng-repeat="user in AllUsersCtrl.users" ng-if="AllUsersCtrl.determineUser(user.name)">
+			<a href="#/profile/{{user.uid}}" class="thumbnail">
+	 			<img class= "smallThumbs" ng-src="{{user.profilepic}}" alt="...">
+	 		</a>
+			<a href="#/profile/{{user.uid}}">{{user.name}} </a>
 
 			
 			<button ng-click="AllUsersCtrl.addFriend(user.uid, user.name)">add Friend</button>
 	</div>
 </section>
+<button onclick="history.back()">Back</button>
+
 </div>
 

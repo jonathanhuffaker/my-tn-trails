@@ -25,11 +25,8 @@ app.controller('allusersCtrl',
 				var authData = Auth.$getAuth();
 				console.log(authData);
 				var friendRef = new Firebase("https://my-tn-trails.firebaseio.com/friends/");
-				
 				this.friends = $allUsersArray(friendRef);
-
 				this.newFriend = {};
-
 				this.friends.$add({
 						uid: authData.uid,
 						name: name,
@@ -37,8 +34,6 @@ app.controller('allusersCtrl',
 					});
 				this.newfriend = "";
 			};
-
-
 
 			this.gotoProfile = function(uid){
 			$location.path("/profile/"+uid);

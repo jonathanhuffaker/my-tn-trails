@@ -4,4 +4,11 @@
 
 .smallThumbs {
 	display: inline;
+	max-height: 100px;
+	max-width: 100px;
+}
+
+.thumbnail {
+	max-height: 300px;
+	max-width: 300px;
 }

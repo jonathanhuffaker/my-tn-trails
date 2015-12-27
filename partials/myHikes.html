@@ -11,18 +11,18 @@
 			</div>
 	</div>
 
-<div class="singleHikeDiv" ng-repeat="hike in MyHikesCtrl.hikes | filter:searchText">
-	<div class="singleHike">
-		<h3>{{hike.trail}}</h3>
-		<h5>{{hike.location}}</h5>
-		<h5>{{hike.park}}</h5>
+	<div class="singleHikeDiv" ng-repeat="hike in MyHikesCtrl.hikes | filter:searchText">
+		<div class="singleHike">
+			<h3>{{hike.trail}}</h3>
+			<h5>{{hike.location}}</h5>
+			<h5>{{hike.park}}</h5>
 
-		<p>{{hike.description}}</p>
-		<p>Rating: {{hike.rating}}</p>
-
+			<p>{{hike.description}}</p>
+			<p>Rating: {{hike.rating}}</p>
+		</div>
+		<button type="button" href="#/addPic" class="btn btn-primary">Add photo for this hike</button>
 	</div>
-	<button type="button" href="#/addPic" class="btn btn-primary">Add photo for this hike</button>
-
+	<button onclick="history.back()">Back</button>
 
 </div>
 

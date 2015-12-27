@@ -10,9 +10,35 @@
   </div>
 </div>
 
-<div ng-repeat= "photo in OtherUsersProfileCtrl.photos">
 
-<a href="{{photos.url}}" class="thumbnail">
-				      <img class= "smallThumbs" ng-src="{{photos.url}}" alt="...">
-<div>{{OtherUsersProfileCtrl.otherUser[0].name}}</div>
+<div class="container">
+	<div class="row">
+		<div class="col-sm-6">
+			<div ng-repeat= "hike in OtherUsersProfileCtrl.hikes">
+				<div class="singleHike"> Hikes
+					<h3>{{hike.trail}}</h3>
+					<h5>{{hike.location}}</h5>
+					<h5>{{hike.park}}</h5>
+					<p>{{hike.description}}</p>
+					<p>Rating: {{hike.rating}}</p>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="col-sm-6">
+			<div> Photo Gallery </div>
+			<div ng-repeat= "photo in OtherUsersProfileCtrl.photos">
+					<a href="{{photo.url}}" class="thumbnail">
+					   <img class= "smallThumbs" ng-src="{{photo.url}}" alt="..."></a>
+			</div>
+		</div>
+
+	</div>
+	<button onclick="history.back()">Back</button>
+
+</div>
+
+
+<!-- <div>{{OtherUsersProfileCtrl.otherUser[0].name}}</div> -->
 

@@ -5,15 +5,8 @@ app.controller('addhikeCtrl',
 	function(Auth, $addHikes, $location){
 		var authData = Auth.$getAuth();
 		console.log(authData);
-		// below is what i have currently and is working but should be flat data structure(hence branch flat_data_structure)
 		var ref = new Firebase("https://my-tn-trails.firebaseio.com/hikes/");
-
-
-
-
-
 		this.hikes = $addHikes(ref);
-
 		this.newHike = {};
 
 		this.addHike = function(){
@@ -25,7 +18,6 @@ app.controller('addhikeCtrl',
 				description: this.newHike.description,
 				id: "hike"+((Math.random()*10)+1),
 				uid: authData.uid
-
 			});
 
 			// clarify that I need the below - creating new branch before going off on another tangent
