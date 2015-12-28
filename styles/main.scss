@@ -1,0 +1,99 @@
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
+
+body {
+  font: 110% $font-stack;
+  color: $primary-color;
+  font-size: 120%;
+}
+
+/*.profileThumb {
+	display: inline;
+}*/
+
+.navbar {
+	border-style: solid;
+	border-bottom: 3px solid #ff9900;
+}
+
+// for tn 3 star brand
+.brand {
+	max-height: 25px;
+	max-width: 25px;
+	margin-top: 10px;
+}
+
+// for logged in users profile
+
+.jumbotron {
+	background-image: url("http://www.greatsmokies.com/images/hiking-feet-fall-1240.jpg");
+	background-repeat: no-repeat;
+	color: white;
+	background-position: center;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	border-bottom: 3px solid #ff9900;
+}
+
+// padding around profile pic
+.bufferStyle{
+	padding:5px;
+	background: #dbdbdb;
+}
+
+
+.profilePic {
+	max-height: 300px;
+	max-width: 300px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.profileName {
+	margin-right: auto;
+	margin-left: 2em;
+	font-size: 120%;
+}
+
+.smallThumbs {
+	display: inline;
+	max-height: 100px;
+	max-width: 100px;
+}
+
+.thumbnail {
+	max-height: 300px;
+	max-width: 300px;
+}
+
+
+.otherUserProfilePic {
+	max-width: 300px;
+	max-height: 300px;
+	margin-right: 2em;
+	margin-left: 2em;
+}
+
+.otherUserProfileName {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+// ALL USERS PAGE
+.allUsersSec {
+	margin-top: 35px;
+}
+
+
+
+
+// loggied in users hikes on myHikes
+
+.searchHikes {
+	margin-top: 35px;
+}
+
+.singleHike {
+	display: inline;
+}
+
+

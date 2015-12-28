@@ -2,7 +2,7 @@
 </br>
 <div class="container">
 	</br>
-	<section class="row">
+	<section class="row allUsersSec">
 		<div class="col-xs-6 col-md-3"  ng-repeat="user in AllUsersCtrl.users" ng-if="AllUsersCtrl.determineUser(user.name)">
 			<a href="#/profile/{{user.uid}}" class="thumbnail">
 	 			<img class= "smallThumbs" ng-src="{{user.profilepic}}" alt="...">

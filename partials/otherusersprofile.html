@@ -2,10 +2,11 @@
 </br>
 <div class="jumbotron">
   <div class="container">
-		
-		<div ng-repeat="user in OtherUsersProfileCtrl.otherUser">
-   	 <img class= "largeThumbs" ng-src="{{user.profilepic}}" alt="...">
-			<p>{{user.name}}</p>
+		<div class="jumboContents">
+			<div ng-repeat="user in OtherUsersProfileCtrl.otherUser">
+	   	 <img class= "otherUserProfilePic" ng-src="{{user.profilepic}}" alt="...">
+				<p class= "otherUserProfileName">{{user.name}}</p>
+			</div>
 		</div>
   </div>
 </div>

@@ -2,17 +2,23 @@
 
 <div class="jumbotron">
   <div class="container">
-		<h1 ng-mouseover="expression">Welcome Back!</h1>
-					<!-- <img src="../images/images.jpeg" alt="profilePic"> -->
- 		<div  ng-repeat="user in ProfileCtrl.profileInfo">
-			<a href="{{user.profilepic}}" class="thumbnail">
-			<img class= "largeThumbs" ng-src="{{user.profilepic}}" alt="...">
-			</a>
-	  </div>
+	  	<div class="col-sm-4 col-md-4 col-lg-4"></div>
+	  	<div class="col-sm-4 col-md-4 col-lg-4">
 
-		<div ng-repeat="user in ProfileCtrl.profileInfo">
-			<p> {{user.name}} </p>
-  	</div>
+				<h1 ng-mouseover="expression">Welcome Back!</h1>
+							<!-- <img src="../images/images.jpeg" alt="profilePic"> -->
+		 		<div  ng-repeat="user in ProfileCtrl.profileInfo">
+					<a href="{{user.profilepic}}" class="profilePic">
+					<img class= "profilePic bufferStyle" ng-src="{{user.profilepic}}" alt="...">
+					</a>
+			  <!-- </div> -->
+
+				<!-- <div ng-repeat="user in ProfileCtrl.profileInfo"> -->
+					<p class="profileName"> {{user.name}} </p>
+		  	</div>
+			 </div>
+  	<div class="col-sm-4 col-md-4 col-lg-4"></div>
+
   </div>
 </div>
 
@@ -35,7 +41,7 @@
 	<div class="container">
 		<div class="col-sm-8">
 			<div>myHike Photo Gallery</div>
-				<div class="row" ng-repeat="photo in ProfileCtrl.photos">
+				<div ng-repeat="photo in ProfileCtrl.photos">
 				  <div class="col-xs-3 col-md-3">
 				    <a href="{{photo.url}}" class="thumbnail">
 				      <img class= "smallThumbs" ng-src="{{photo.url}}" alt="...">
