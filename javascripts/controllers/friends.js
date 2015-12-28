@@ -10,6 +10,7 @@ app.controller('friendsCtrl',
 			var ref = new Firebase("https://my-tn-trails.firebaseio.com/friends/").orderByChild("uid").equalTo(me);
 			this.friends = $allFriendsArray(ref);
 			console.log(this.friends);
+			
 			this.determineFriend = function(id){
 				var authData = Auth.$getAuth();
 				var loggedInUser = authData.auth.uid;
@@ -19,6 +20,13 @@ app.controller('friendsCtrl',
 					return false;
 			};
 
+// adding the userRef and Userfriend to try and populate profilepic
+			var userRef = new Firebase("https://my-tn-trails.firebaseio.com/users/");
+			this.userFriend = $allFriendsArray(userRef);
+
+			this.gotoProfile = function(uid){
+			$location.path("/profile/"+uid);
+			};
 		}
 	]
 );

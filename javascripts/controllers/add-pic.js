@@ -19,8 +19,8 @@ app.controller('addpicCtrl',
 					trail: this.newPic.trail
 				});
 					// this.newPic = "";
-					// $location.path("/addPic/");
-				}
+					$location.path("/addPic/");
+				};
 				// .bind(this);
 
 		}

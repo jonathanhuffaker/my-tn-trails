@@ -24,5 +24,5 @@ app.controller('addhikeCtrl',
 		// 	this.newHike="";
 		// 	$location.path("/myHikes/");
 		// }.bind(this);
-		}
+		};
 	}]);

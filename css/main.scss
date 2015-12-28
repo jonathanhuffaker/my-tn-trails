@@ -1,0 +1,24 @@
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
+
+.smallThumbs {
+	display: inline;
+	max-height: 100px;
+	max-width: 100px;
+}
+
+.thumbnail {
+	max-height: 300px;
+	max-width: 300px;
+}
+
+.brand {
+	max-height: 25px;
+	max-width: 25px;
+	margin-top: 10px;
+}

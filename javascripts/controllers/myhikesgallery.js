@@ -14,10 +14,10 @@ app.controller('mygalleryCtrl',
 			// to delete photo
 			this.deletePhoto = function(id) {
 				this.photos.$remove(this.photos.$getRecord(id)).then(function(ref){
-				}),
-				function(error){
-					console.log(error);
-				};
+				});
+				// function(error){
+				// 	console.log(error);
+				// };
 			};
 		}
 	]
