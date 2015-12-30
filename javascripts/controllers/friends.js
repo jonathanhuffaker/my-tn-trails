@@ -24,8 +24,51 @@ app.controller('friendsCtrl',
 			var userRef = new Firebase("https://my-tn-trails.firebaseio.com/users/");
 			this.userFriend = $allFriendsArray(userRef);
 
+
+
+
+// =========another attempt =================
+
+	// var userRef = new Firebase("https://my-tn-trails.firebaseio.com/users/");
+	// 		var userFriend = $allFriendsArray(userRef);
+	// 		var pleaseWorkFriend = userFriend.friend.uid;
+
+
+	// 		this.myFriend = function(id) {
+	// 			if(this.determineFriend == pleaseWorkFriend) {
+	// 				return true;
+	// 			}
+	// 				return false;
+	// 		};
+
+	// 		console.log(this.myFriend);
+
+
+
+// ATTEMPT BELOW WAS A FAILURE -----------------
+
+			// var userRef = new Firebase("https://my-tn-trails.firebaseio.com/users/");
+			// this.userFriend = function(id){
+			// 	var matchedFriend = $allFriendsArray(userRef);
+
+			// 	console.log(matchedFriend);
+			// 	var userPicMatch = matchedFriend;
+			// 	if (userPicMatch === id) {
+			// 		return true;
+			// 	}
+			// 		return false;
+			// };
+
+			// console.log(this.userFriend);
+
+// ATTEMPT ABOVE WAS A FAILURE -----------------
+
+
+
+
+
 			this.gotoProfile = function(uid){
-			$location.path("/profile/"+uid);
+			$location.path("/friends/"+uid);
 			};
 		}
 	]

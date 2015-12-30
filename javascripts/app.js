@@ -40,6 +40,10 @@ app.config(
 					templateUrl: '/partials/friends.html',
 					controller: 'friendsCtrl as FriendsCtrl'
 				})
+					.when('/friends/:id', {
+					templateUrl: '/partials/friendsprofile.html',
+					controller: 'friendsprofileCtrl as FriendsProfileCtrl'
+				})
 				.otherwise({ redirectTo: '/login'});
 		}
 	]

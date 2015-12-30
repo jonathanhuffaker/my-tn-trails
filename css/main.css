@@ -6,6 +6,9 @@ body {
 /*.profileThumb {
 	display: inline;
 }*/
+.titleBar {
+  padding-top: 60px; }
+
 .navbar {
   border-style: solid;
   border-bottom: 3px solid #ff9900; }
@@ -59,6 +62,9 @@ body {
 
 .allUsersSec {
   margin-top: 35px; }
+
+.addForm {
+  padding-top: 40px; }
 
 .searchHikes {
   margin-top: 35px; }

@@ -11,6 +11,13 @@ body {
 	display: inline;
 }*/
 
+// login page title 
+.titleBar {
+	padding-top: 60px;
+}
+
+
+
 .navbar {
 	border-style: solid;
 	border-bottom: 3px solid #ff9900;
@@ -83,7 +90,10 @@ body {
 	margin-top: 35px;
 }
 
-
+// for add pic and add hikes
+.addForm {
+	padding-top: 40px;
+}
 
 
 // loggied in users hikes on myHikes
@@ -91,6 +101,7 @@ body {
 .searchHikes {
 	margin-top: 35px;
 }
+
 
 .singleHike {
 	display: inline;

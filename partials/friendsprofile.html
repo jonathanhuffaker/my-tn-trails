@@ -1,0 +1,41 @@
+<ng-include src="'partials/navbar.html'"></ng-include>
+</br>
+<div class="jumbotron">
+  <div class="container">
+		<div class="jumboContents">
+			<div ng-repeat="user in FriendsProfileCtrl.otherUser">
+	   	 <img class= "otherUserProfilePic" ng-src="{{user.profilepic}}" alt="...">
+				<p class= "otherUserProfileName">{{user.name}}</p>
+			</div>
+		</div>
+  </div>
+</div>
+
+
+<div class="container">
+	<div class="row">
+		<div class="col-sm-6">
+			<div ng-repeat= "hike in FriendsProfileCtrl.hikes">
+				<div class="singleHike"> Hikes
+					<h3>{{hike.trail}}</h3>
+					<h5>{{hike.location}}</h5>
+					<h5>{{hike.park}}</h5>
+					<p>{{hike.description}}</p>
+					<p>Rating: {{hike.rating}}</p>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="col-sm-6">
+			<div> Photo Gallery </div>
+			<div ng-repeat= "photo in FriendsProfileCtrl.photos">
+					<a href="{{photo.url}}" class="thumbnail">
+					   <img class= "smallThumbs" ng-src="{{photo.url}}" alt="..."></a>
+			</div>
+		</div>
+
+	</div>
+	<button onclick="history.back()">Back</button>
+
+</div>

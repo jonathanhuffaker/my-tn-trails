@@ -32,7 +32,7 @@ app.controller('allusersCtrl',
 						name: name,
 						friendID: "friend"+((Math.random()*10)+1)
 					});
-				this.newfriend = "";
+				// this.newfriend = "";
 			};
 
 			this.gotoProfile = function(uid){
