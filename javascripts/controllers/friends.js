@@ -67,8 +67,8 @@ app.controller('friendsCtrl',
 
 
 
-			this.gotoProfile = function(uid){
-			$location.path("/friends/"+uid);
+			this.gotoProfile = function(id){
+			$location.path("/profile/"+id);
 			};
 		}
 	]

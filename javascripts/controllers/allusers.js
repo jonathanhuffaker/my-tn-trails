@@ -29,10 +29,12 @@ app.controller('allusersCtrl',
 				this.newFriend = {};
 				this.friends.$add({
 						uid: authData.uid,
+						id: id,
 						name: name,
 						friendID: "friend"+((Math.random()*10)+1)
 					});
-				// this.newfriend = "";
+				this.newfriend = "";
+				console.log(this.friends);
 			};
 
 			this.gotoProfile = function(uid){
