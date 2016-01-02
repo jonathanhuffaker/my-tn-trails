@@ -5,72 +5,22 @@
 <h5>myTN Trail Friends</h5>
 	<div ng-repeat="friend in FriendsCtrl.friends" ng-if="FriendsCtrl.determineFriend(friend.name)">
 
-<!-- below was commented out -->
-		<!-- <p ng-click="FriendsCtrl.gotoProfile(friend.uid)">{{friend.name}}</p> -->
-			
-
 
 			<a href="#/profile/{{friend.id}}" ng-click="FriendsCtrl.gotoProfile(friend.uid)" class="thumbnail"> {{friend.name}}
 
-
-
-
-	 			<!-- <img class= "smallThumbs" ng-src="FriendsCtrl.userFriend{{user.profilepic}}"  alt="..."> -->
 
 	 			<img class= "smallThumbs" ng-src="{{user.profilepic}}"  alt="{{user.profilepic}}">
 	 			
 	 		</a>
 
 
-
-<!-- below was commented out -->
-			<!-- <a ng-click="AllUsersCtrl.gotoProfile(friend.uid)>{{friend.name}}</a>
- -->
-
-
 	</div>
 
-	<div ng-repeat="user in FriendsCtrl.userFriend" ng-if= "FriendsCtrl.determineFriend(friend.uid)">
-	<img class= "smallThumbs" ng-src= "{{user.profilepic}}" ng-if= "FriendsCtrl.determineFriend(friend.uid)">
-
-
-<!-- div ng-repeat="user in FriendsCtrl.userFriend" ng-if= "FriendsCtrl.determineFriend(friend.uid)">
-	<img class= "smallThumbs" ng-src= "{{user.profilepic}}" ng-if= "FriendsCtrl.determineFriend(friend.uid)"> -->
-
-
-
-
-<!-- 	<div>{{FriendsCtrl.userFriend[0].uid}}</div>
- -->
 	</div>
 	<button onclick="history.back()">Back</button>
 
 </div>
 
-
-<!-- =================== -->
-
-<!-- <ng-include src="'partials/navbar.html'"></ng-include>
-
-<div class="singleImgDiv col-xs-2">
-<h5>myTN Trail Friends</h5>
-	<div ng-repeat="friend in FriendsCtrl.friends && user in FriendsCtrl.userFriend" ng-if="FriendsCtrl.determineFriend(friend.uid) == FriendsCtrl.userFriend(user.uid)"> -->
-
-		
-
-		<!-- <p ng-click="FriendsCtrl.gotoProfile(friend.uid)">{{friend.name}}</p> -->
-			
-			
-
-<!-- 			<a href="#/profile/{{user.uid}}" class="thumbnail"> {{friend.name}}
-	 			<img class= "smallThumbs" ng-src="{{user.profilepic}}"  alt="...">
-
-	 		</a>
-
-	</div>
-	<button onclick="history.back()">Back</button>
-	
-</div> -->
 
 
 

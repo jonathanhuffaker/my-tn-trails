@@ -22,6 +22,7 @@
 					<h5>{{hike.park}}</h5>
 					<p>{{hike.description}}</p>
 					<p>Rating: {{hike.rating}}</p>
+					<button ng-click="OtherUsersProfileCtrl.addToHikeWishlist(hike.trail, hike.location, hike.park, hike.rating, hike.description)">Add to Wishlist</button>
 				</div>
 			</div>
 		</div>

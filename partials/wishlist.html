@@ -1,0 +1,27 @@
+<ng-include src="'partials/navbar.html'"></ng-include>
+</br>
+
+<div class="container">
+	</br>
+	<div class="row">
+		</br>
+			<div class="col-md-12 searchWishlist">myWishlist</div>	
+			<div class="col-md-2">
+				<input class="search" type="text" placeholder="Search your wishlist..." ng-model="searchText">
+			</div>
+	</div>
+
+	<div class="singleWishlistDiv" ng-repeat="wishlist in WishlistCtrl.wishlist | filter:searchText">
+		<div class="singleHike">
+			<h3>{{wishlist.trail}}</h3>
+			<h5>{{wishlist.location}}</h5>
+			<h5>{{wishlist.park}}</h5>
+
+			<p>{{wishlist.description}}</p>
+			<p>Rating: {{wishlist.rating}}</p>
+		</div>
+		<!-- <button type="button" href="#/addPic/" class="btn btn-primary">Remove From Wishlist</button> -->
+	</div>
+	<button onclick="history.back()">Back</button>
+
+</div>

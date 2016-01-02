@@ -19,4 +19,28 @@ app.controller('otherusersprofileCtrl',
 		console.log(this.friends);
 
 
+		// add hike to wishlist
+
+		this.addToHikeWishlist = function(trail, park, location,rating, description){
+			console.log(id);
+			var authData= Auth.$getAuth();
+			console.log(authData);
+			var wishlistRef = new Firebase("https://my-tn-trails.firebaseio.com/wishlist/");
+			this.wishlist= $currentInfo(wishlistRef);
+			this.newWishlist={};
+			this.wishlist.$add({
+				uid: authData.uid,
+				park: park,
+				location: location,
+				rating: rating,
+				description: description,
+				wishlistID: "wishlist"+((Math.random()*10)+1)
+
+			});
+			this.newWishlist = "";
+			console.log(this.newWishlist);
+			;
+		};
+
+
 	}]);
