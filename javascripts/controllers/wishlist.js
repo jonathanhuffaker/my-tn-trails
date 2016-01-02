@@ -12,6 +12,16 @@ app.controller('wishlistCtrl',
 			this.wishlist = $myWishlist(ref);
 			console.log(this.wishlist);
 
+
+			// remove hike from wishlist
+			this.removeHike = function(id){
+				this.wishlist.$remove(this.wishlist.$getRecord(id)).then(function(ref){
+				}),
+				function(error){
+					console.log(error);
+				};
+			};
+
 		}
 	]
 );
