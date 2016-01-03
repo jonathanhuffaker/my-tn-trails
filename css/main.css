@@ -6,8 +6,39 @@ body {
 /*.profileThumb {
 	display: inline;
 }*/
+.descriptionArea {
+  padding-top: 95px; }
+
 .titleBar {
   padding-top: 60px; }
+
+.glypDesc {
+  padding: 10px; }
+
+.loginArea {
+  background-color: silver;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 60px;
+  padding-bottom: 60px; }
+
+.loginAreaInputs {
+  margin-left: 6em; }
+
+.welcomeLoginHeading {
+  margin-left: 4em; }
+
+.loginInput {
+  padding: 5px; }
+
+.loginButtonDiv {
+  margin-left: 2em; }
+
+.fullContain {
+  border-bottom: 5px solid #ff9900; }
+
+.landingPageImage {
+  padding-top: 45px; }
 
 .navbar {
   border-style: solid;

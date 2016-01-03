@@ -30,6 +30,7 @@ app.controller('otherusersprofileCtrl',
 			this.newWishlist={};
 			this.wishlist.$add({
 				uid: authData.uid,
+				trail: trail,
 				park: park,
 				location: location,
 				rating: rating,

@@ -1,4 +1,5 @@
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+
   <div class="container-fluid">
 
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -11,28 +12,77 @@
   </div> 
 </nav>
 
-<div class="container"
+<!-- ========= -->
+</br>
+<div class="fullContain container"
 	<div class="row">
 
-		<div class="col-sm-4">
-			<div class="col-sm-4">
-				<div class="container loginBox">
-					<div class="titleBar">
-						<h1>Welcome to myTN Trails.  Please log-in or register</h1>
-					</div>
-					<div>
+		<div class="col-sm-6">
+			<div class="descriptionArea">
+				<h4 class= "glypDesc">
+					<span class="glyphicon glyphicon-tree-conifer" aria-hidden="true">
+						Discover New Hikes!
+					</span>
+				</h4>
+
+				<h4 class= "glypDesc">
+					<span class="glyphicon glyphicon-picture" aria-hidden="true">
+						Share your myHike Photos				
+					</span>
+				</h4>
+
+				<h4 class= "glypDesc">
+					<span class="glyphicon glyphicon-user" aria-hidden="true">
+						Connect with fellow hikers				
+					</span>
+				</h4>
+
+				<h4 class= "glypDesc">
+				
+					<span class="glyphicon glyphicon-phone" aria-hidden="true">
+						Mobile Friendly				
+					</span>
+				</h4>
+
+			</div>
+		</div>
+
+		<div class="loginArea col-sm-6">
+			<div class="loginBox">
+				<div class="titleBar">
+					<h1>Welcome to myTN Trails!</h1>  
+					<h3 class= "welcomeLoginHeading">Please log-in or register</h3>
+				</div>
+				<div class="loginAreaInputs">
+					<div> New Users - Please Complete All Fields</div>
 						<input class="loginInput" type="text" ng-model="name" placeholder="Name ex. John Doe">
 						<input class="loginInput" type="text" ng-model="profilepic" placeholder="Profile Pic URL Here">
+					</br>
+
+					<div>Existing Users Log-In</div>
 						<input class="loginInput" type="email" ng-model="email" placeholder="email">
 						<input class="loginInput" type="password" ng-model="password" placeholder="password">
-							<button class="btn inputButtons" ng-click="createUser()">Create Account</button>
-							<button class="btn inputButtons" ng-click="loginUser()">Login</button>
-					</div>
+					</br>
+						<div class="loginButtonDiv">
+							<button class="btn btn-warning inputButtons" ng-click="createUser()">Create Account</button>
+							<button class="btn btn-warning inputButtons" ng-click="loginUser()">Login</button>
+						</div>
 				</div>
 			</div>
 		</div>
-		<div class="col-sm-4"></div>
+		<!-- <div class="col-sm-2"></div> -->
 
 
 	</div>
+</div>
+
+
+<div class="row">
+	<div class="col-sm-4 col-lg-4 col-xl-4"></div>
+	<div class= "col-sm-4 col-lg-4 col-xl-4">
+		<img class="landingPageImage" alt="landingPageImage" src="https://dl.dropboxusercontent.com/s/6obqjet62dboqct/tnStars2.png?dl=0">
+	</div>
+	<div class="col-sm-4 col-lg-4 col-xl-4"></div>
+
+
 </div>
