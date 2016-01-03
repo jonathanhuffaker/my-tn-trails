@@ -57,6 +57,9 @@ body {
 	padding-top: 45px;
 }
 
+// ^^^^^Login Page^^^^^^
+
+
 
 // =====NAVBAR======
 .navbar {
@@ -66,7 +69,7 @@ body {
 
 
 
-// for tn 3 star brand - NAVBAR
+			// for tn 3 star brand - NAVBAR
 .brand {
 	max-height: 25px;
 	max-width: 25px;
@@ -84,7 +87,7 @@ body {
 	border-bottom: 3px solid #ff9900;
 }
 
-// padding around profile pic
+				// padding around profile pic
 .bufferStyle{
 	padding:5px;
 	background: #dbdbdb;
@@ -100,9 +103,10 @@ body {
 
 .profileName {
 	margin-right: auto;
-	margin-left: 2em;
+	margin-left: 4em;
 	font-size: 120%;
 }
+
 
 .smallThumbs {
 	display: inline;
@@ -128,6 +132,9 @@ body {
 	margin-right: auto;
 	margin-left: auto;
 }
+
+// ===========^^^^^PROFILE PAGE^^^^^^========
+
 
 // ALL USERS PAGE
 .allUsersSec {
@@ -158,6 +165,10 @@ body {
 	margin-bottom:50px;
 }
 
+.removeFriendBtn {
+	margin-left: 4em;
+}
+
 // .addFriendBtn {
 // 	margin-right: 50px;
 // 	margin-left: auto;
@@ -166,6 +177,18 @@ body {
 // for gallery
 .hikeThumb {
 	margin-top: 30px;
+}
+
+// =======OTHER USERS PROFILE=========
+.otherUserProfileName {
+	margin-left: 5em;
+}
+
+
+
+// ===========WISHLIST===============
+.wishlistContainer {
+	margin-top: 40px;
 }
 
 

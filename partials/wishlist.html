@@ -3,12 +3,14 @@
 
 <div class="container">
 	</br>
-	<div class="row">
-		</br>
-			<div class="col-md-12 searchWishlist">myWishlist</div>	
-			<div class="col-md-2">
-				<input class="search" type="text" placeholder="Search your wishlist..." ng-model="searchText">
-			</div>
+	<div class= "wishlistContainer">
+		<div class="row">
+			</br>
+				<div class="col-md-12 searchWishlist">myWishlist</div>	
+				<div class="col-md-12">
+					<input class="search" type="text" placeholder="Search your wishlist..." ng-model="searchText">
+				</div>
+		</div>
 	</div>
 
 	<div class="singleWishlistDiv" ng-repeat="wishlist in WishlistCtrl.wishlist | filter:searchText">

@@ -69,7 +69,7 @@ body {
 
 .profileName {
   margin-right: auto;
-  margin-left: 2em;
+  margin-left: 4em;
   font-size: 120%; }
 
 .smallThumbs {
@@ -110,7 +110,16 @@ body {
   margin-top: 20px;
   margin-bottom: 50px; }
 
+.removeFriendBtn {
+  margin-left: 4em; }
+
 .hikeThumb {
   margin-top: 30px; }
+
+.otherUserProfileName {
+  margin-left: 5em; }
+
+.wishlistContainer {
+  margin-top: 40px; }
 
 /*# sourceMappingURL=main.css.map */

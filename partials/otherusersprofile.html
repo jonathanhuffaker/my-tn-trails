@@ -2,13 +2,19 @@
 </br>
 <div class="jumbotron">
   <div class="container">
-		<div class="jumboContents">
-			<div ng-repeat="user in OtherUsersProfileCtrl.otherUser">
-	   	 <img class= "otherUserProfilePic" ng-src="{{user.profilepic}}" alt="...">
-				<p class= "otherUserProfileName">{{user.name}}</p>
+  	<div class="row">
+			<div class="jumboContents">
+				<div class="col-sm-4 col-md-4 col-lg-4"></div>
+				<div class="col-sm-4 col-md-4 col-lg-4">
+					<div ng-repeat="user in OtherUsersProfileCtrl.otherUser">
+			   	 <img class= "otherUserProfilePic" ng-src="{{user.profilepic}}" alt="...">
+					<p class= "otherUserProfileName">{{user.name}}</p>
+					</div>
+				<div class="col-sm-4 col-md-4 col-lg-4"></div>
+				</div>
 			</div>
-		</div>
-  </div>
+  	</div>
+	</div>
 </div>
 
 
