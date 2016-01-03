@@ -12,6 +12,15 @@ app.controller('myhikesCtrl',
 			this.hikes = $myHikes(ref);
 			console.log(this.hikes);
 
+			// Remove hike from myHikes
+			this.removeHike = function(id){
+				this.hikes.$remove(this.hikes.$getRecord(id)).then(function(ref){
+				});
+				// function(error){
+				// 	console.log(error);
+				// };
+			};
+
 		}
 	]
 );

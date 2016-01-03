@@ -39,7 +39,7 @@ app.controller('otherusersprofileCtrl',
 			});
 			this.newWishlist = "";
 			console.log(this.newWishlist);
-			;
+			
 		};
 
 

@@ -20,8 +20,9 @@
 			<p>{{wishlist.description}}</p>
 			<p>Rating: {{wishlist.rating}}</p>
 		</div>
-		<button ng-click="WishlistCtrl.removeHike(wishlist.$id)">Remove From Wishlist</button>
+		<button class="btn btn-danger" ng-click="WishlistCtrl.removeHike(wishlist.$id)">Remove </button>
 	</div>
-	<button onclick="history.back()">Back</button>
+	</br>
+	<button class="btn btn-warning" onclick="history.back()">Back</button>
 
 </div>

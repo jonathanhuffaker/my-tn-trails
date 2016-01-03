@@ -20,9 +20,15 @@
 			<p>{{hike.description}}</p>
 			<p>Rating: {{hike.rating}}</p>
 		</div>
-		<button type="button" href="#/addPic/" class="btn btn-primary">Add photo for this hike</button>
+
+		<a type="button" href="#/addPic/" class="btn btn-primary">Add photo for this hike</a>
+
+		<button class="btn btn-danger" ng-click="MyHikesCtrl.removeHike(hike.$id)">Remove</button>
+
+		<!-- <button type="button" href="#/addPic/" class="btn btn-primary">Add photo for this hike</button> -->
 	</div>
-	<button onclick="history.back()">Back</button>
+	</br>
+	<button class="btn btn-warning" onclick="history.back()">Back</button>
 
 </div>
 

@@ -20,51 +20,20 @@ app.controller('friendsCtrl',
 					return false;
 			};
 
+			// =====Logged in user REMOVAL of friends====
+
+			this.removeFriend = function(id){
+				this.friends.$remove(this.friends.$getRecord(id)).then(function(ref){
+
+				});
+				// function(error){
+				// 	console.log(error);
+				// };
+			};
+
 // adding the userRef and Userfriend to try and populate profilepic
 			var userRef = new Firebase("https://my-tn-trails.firebaseio.com/users/");
 			this.userFriend = $allFriendsArray(userRef);
-
-
-
-
-// =========another attempt =================
-
-	// var userRef = new Firebase("https://my-tn-trails.firebaseio.com/users/");
-	// 		var userFriend = $allFriendsArray(userRef);
-	// 		var pleaseWorkFriend = userFriend.friend.uid;
-
-
-	// 		this.myFriend = function(id) {
-	// 			if(this.determineFriend == pleaseWorkFriend) {
-	// 				return true;
-	// 			}
-	// 				return false;
-	// 		};
-
-	// 		console.log(this.myFriend);
-
-
-
-// ATTEMPT BELOW WAS A FAILURE -----------------
-
-			// var userRef = new Firebase("https://my-tn-trails.firebaseio.com/users/");
-			// this.userFriend = function(id){
-			// 	var matchedFriend = $allFriendsArray(userRef);
-
-			// 	console.log(matchedFriend);
-			// 	var userPicMatch = matchedFriend;
-			// 	if (userPicMatch === id) {
-			// 		return true;
-			// 	}
-			// 		return false;
-			// };
-
-			// console.log(this.userFriend);
-
-// ATTEMPT ABOVE WAS A FAILURE -----------------
-
-
-
 
 
 			this.gotoProfile = function(id){

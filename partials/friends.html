@@ -1,25 +1,25 @@
 
 <ng-include src="'partials/navbar.html'"></ng-include>
+</br>
+<div class="row">
+	<div class="singleFriendDiv">
+	<h5>myTN Trail Friends</h5>
+		<div class= "usersFriend col-xs-6 col-md-3" ng-repeat="friend in FriendsCtrl.friends" ng-if="FriendsCtrl.determineFriend(friend.name)">
 
-<div class="singleImgDiv col-xs-2">
-<h5>myTN Trail Friends</h5>
-	<div ng-repeat="friend in FriendsCtrl.friends" ng-if="FriendsCtrl.determineFriend(friend.name)">
+				<a href="#/profile/{{friend.id}}" ng-click="FriendsCtrl.gotoProfile(friend.uid)" class="thumbnail"> {{friend.name}}
 
+		 			<img class= "smallThumbs" ng-src="{{friend.profilepic}}"  alt="{{friend.profilepic}}">
+		 		</a>
 
-			<a href="#/profile/{{friend.id}}" ng-click="FriendsCtrl.gotoProfile(friend.uid)" class="thumbnail"> {{friend.name}}
+		 		<button class="removeFriendBtn btn btn-danger" ng-click="FriendsCtrl.removeFriend(friend.$id)">Remove </button>
 
-
-	 			<img class= "smallThumbs" ng-src="{{user.profilepic}}"  alt="{{user.profilepic}}">
-	 			
-	 		</a>
-
-
+		</div>
 	</div>
-
-	</div>
-	<button onclick="history.back()">Back</button>
-
 </div>
+	</br>
+
+
+	<button class="btn btn-warning" onclick="history.back()">Back</button>
 
 
 

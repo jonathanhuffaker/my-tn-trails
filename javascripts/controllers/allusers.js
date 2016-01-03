@@ -20,7 +20,7 @@ app.controller('allusersCtrl',
 		};
 
 					//add a friend
-			this.addFriend = function(id,name){
+			this.addFriend = function(id,name, profilepic){
 				console.log(id);
 				var authData = Auth.$getAuth();
 				console.log(authData);
@@ -31,6 +31,7 @@ app.controller('allusersCtrl',
 						uid: authData.uid,
 						id: id,
 						name: name,
+						profilepic: profilepic,
 						friendID: "friend"+((Math.random()*10)+1)
 					});
 				this.newfriend = "";

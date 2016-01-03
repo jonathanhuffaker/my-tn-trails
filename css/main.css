@@ -48,7 +48,9 @@ body {
 
 .thumbnail {
   max-height: 300px;
-  max-width: 300px; }
+  max-width: 300px;
+  margin-bottom: 1px;
+  margin-top: 30px; }
 
 .otherUserProfilePic {
   max-width: 300px;
@@ -71,5 +73,13 @@ body {
 
 .singleHike {
   display: inline; }
+
+.usersFriend {
+  display: inline;
+  margin-top: 20px;
+  margin-bottom: 50px; }
+
+.hikeThumb {
+  margin-top: 30px; }
 
 /*# sourceMappingURL=main.css.map */

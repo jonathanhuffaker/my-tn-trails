@@ -70,8 +70,9 @@ body {
 .thumbnail {
 	max-height: 300px;
 	max-width: 300px;
+	margin-bottom: 1px;
+	margin-top: 30px;
 }
-
 
 .otherUserProfilePic {
 	max-width: 300px;
@@ -96,7 +97,7 @@ body {
 }
 
 
-// loggied in users hikes on myHikes
+// logged in users hikes on myHikes
 
 .searchHikes {
 	margin-top: 35px;
@@ -106,5 +107,26 @@ body {
 .singleHike {
 	display: inline;
 }
+
+// Friends page
+.usersFriend {
+	display: inline;
+	margin-top: 20px;
+	margin-bottom:50px;
+}
+
+// .addFriendBtn {
+// 	margin-right: 50px;
+// 	margin-left: auto;
+// }
+
+// for gallery
+.hikeThumb {
+	margin-top: 30px;
+}
+
+
+
+
 
 
