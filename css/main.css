@@ -99,6 +99,9 @@ body {
 .addForm {
   padding-top: 40px; }
 
+.addHikeButtons {
+  margin-top: 15px; }
+
 .searchHikes {
   margin-top: 35px; }
 
@@ -115,6 +118,10 @@ body {
 
 .hikeThumb {
   margin-top: 30px; }
+
+.galleryImage {
+  max-width: 300px;
+  max-height: 300px; }
 
 .otherUserProfileName {
   margin-left: 5em; }

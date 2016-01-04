@@ -1,8 +1,10 @@
 <ng-include src="'partials/navbar.html'"></ng-include>
 </br>
 <div class="container">
-  <section class="addForm col-xs-4">
-    <p> Add Hike...</p>
+  <div class="row">
+  <div class="col-xs-4 col-md-4 col-lg-4"></div>
+  <section class="addForm col-xs-4 col-md-4 col-lg-4">
+    <h3> Add Hike...</h3>
       <input type="text" placeholder="Trail Name" ng-model="AddHikeCtrl.newHike.trail" />
       <input type="text" placeholder= "Location (Gatlinburg, TN)" ng-model="AddHikeCtrl.newHike.location" />
 
@@ -23,16 +25,13 @@
 
       <input type="text" placeholder= "Description" ng-model="AddHikeCtrl.newHike.description" />
 
+      </br>
+        <div class="addHikeButtons">
+          <a class="btn btn-success" role="button" ng-click="AddHikeCtrl.addHike()">Add</a>
+          <button class="btn btn-warning" onclick="history.back()">Back</button>
+        </div>
+        <div class="col-xs-4 col-md-4 col-lg-4"></div>
 
-      <div class="container">
-        <div class="col-xs-4"></div>
-          <div class="col-xs-4">
-            <a class="btn btn-success" role="button" ng-click="AddHikeCtrl.addHike()">Add</a>
-            </br>
-            <button class="btn btn-warning" onclick="history.back()">Back</button>
-
-          </div>
-          <div class="col-xs-4"></div>
-      </div>
   </section>
+  </div>
 </div>
