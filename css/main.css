@@ -102,6 +102,9 @@ body {
 .addHikeButtons {
   margin-top: 15px; }
 
+#goToGall {
+  margin-top: 50px; }
+
 .searchHikes {
   margin-top: 35px; }
 
@@ -120,8 +123,8 @@ body {
   margin-top: 30px; }
 
 .galleryImage {
-  max-width: 300px;
-  max-height: 300px; }
+  max-width: 200px;
+  max-height: 200px; }
 
 .otherUserProfileName {
   margin-left: 5em; }
