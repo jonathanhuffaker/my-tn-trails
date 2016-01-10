@@ -48,6 +48,7 @@ body {
   max-height: 25px;
   max-width: 25px;
   margin-top: 10px; }
+/*=================*/
 
 .jumbotron {
   background-image: url("http://www.greatsmokies.com/images/hiking-feet-fall-1240.jpg");
@@ -60,6 +61,8 @@ body {
 .bufferStyle {
   padding: 5px;
   background: #dbdbdb; }
+
+
 
 .profilePic {
   max-height: 300px;
